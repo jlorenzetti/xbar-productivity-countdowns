@@ -43,7 +43,7 @@ function workdays_to {
     echo $workdays
 }
 
-end_of_week_unix_time=$(date -v+sun +%s)
+end_of_week_unix_time=$(date -v+sun -v23H -v59M -v59S +%s)
 workdays_in_week=$(workdays_to "$end_of_week_unix_time")
 
 next_quarter=$((quarter + 1))
@@ -52,7 +52,7 @@ starting_month_of_next_quarter=$(((next_quarter - 1) * 3 + 1))
 start_of_next_quarter_unix_time=$(date -j -f "%m-%d %H:%M:%S" "$starting_month_of_next_quarter-01 00:00:00" +%s)
 workdays_in_quarter=$(workdays_to "$start_of_next_quarter_unix_time")
 
-end_of_year_unix_time=$(date -j -f "%m-%d %H:%M:%S" "12-31 23:59:60" +%s)
+end_of_year_unix_time=$(date -j -f "%m-%d %H:%M:%S" "12-31 23:59:59" +%s)
 workdays_in_year=$(workdays_to "$end_of_year_unix_time")
 
 expected_end_of_life_year=$((${VAR_DATE_OF_BIRTH:0:4} + VAR_LIFE_EXPECTANCY))
