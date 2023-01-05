@@ -5,7 +5,9 @@
 # <xbar.author>Jacopo Lorenzetti</xbar.author>
 # <xbar.author.github>jlorenzetti</xbar.author.github>
 # <xbar.desc>This plugin will show the current ISO week number and a few productivity boosting countdowns.</xbar.desc>
+# <xbar.image>https://raw.githubusercontent.com/jlorenzetti/xbar-productivity-countdowns/main/image.png</xbar.image>
 # <xbar.dependencies></xbar.dependencies>
+# <xbar.abouturl>https://github.com/jlorenzetti/xbar-productivity-countdowns</xbar.abouturl>
 # <xbar.var>string(VAR_DATE_OF_BIRTH=1980-12-31): Your date of birth in ISO 8601 format.</xbar.var>
 # <xbar.var>number(VAR_LIFE_EXPECTANCY=80): Your life expectancy in years.</xbar.var>
 
