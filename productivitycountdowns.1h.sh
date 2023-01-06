@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # <xbar.title>Productivity Countdowns</xbar.title>
-# <xbar.version>v1.0</xbar.version>
+# <xbar.version>v1.1</xbar.version>
 # <xbar.author>Jacopo Lorenzetti</xbar.author>
 # <xbar.author.github>jlorenzetti</xbar.author.github>
 # <xbar.desc>This plugin will show the current ISO week number and a few productivity boosting countdowns.</xbar.desc>
