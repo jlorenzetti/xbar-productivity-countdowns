@@ -19,8 +19,10 @@ month_number=$(date +%m)
 quarter=$(((month_number - 1) / 3 + 1))
 
 function format_countdown {
-    if [[ $1 -eq 0 ]]; then
-        echo last "$2"
+    if [[ $1 -lt 0 ]]; then
+        echo No "$3" left
+    elif [[ $1 -eq 0 ]]; then
+        echo Last "$2"
     else
         echo "$1" "$3"
     fi
